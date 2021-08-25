@@ -1,0 +1,30 @@
+package interface_ex;
+
+class B지상군 implements A공방{
+	@Override
+	public void attack() {
+		
+	}
+	@Override
+	public void defense() {
+		
+	}
+}
+class B공군 implements A공방{
+	@Override
+	public void attack() {
+
+	}
+	@Override
+	public void defense() {
+	
+	}
+
+}
+
+public class Ex02 {
+	public static void main(String[] args) {
+
+	}
+
+}

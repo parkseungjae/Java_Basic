@@ -1,0 +1,32 @@
+package interface_ex;
+
+class B지상군 implements A공방{
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}@Override
+	public void defense() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+class B공군 implements A공방{
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+
+	}@Override
+	public void defense() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public class Ex02 {
+	public static void main(String[] args) {
+
+	}
+
+}

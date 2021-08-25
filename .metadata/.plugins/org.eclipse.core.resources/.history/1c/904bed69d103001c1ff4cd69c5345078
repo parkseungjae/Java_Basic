@@ -1,0 +1,38 @@
+package interface_ex;
+
+class B지상군 implements A공방{
+	public void 총알구비() {
+		System.out.println("총알을 장전합니다");
+	}
+
+	public void attack() {
+		총알구비();
+		System.out.println("지상군이 공격합니다");
+	}
+	
+	public void 방패착용() {
+		System.out.println("방패를 착용합니다");
+	}
+	
+	public void defense() {
+		방패착용();
+		System.out.println("지상군이 방어 합니다.");
+	}
+}
+
+class B공군 implements A공방{
+	
+	public void attack() {
+		System.out.println("공군이 공격 합니다.");
+	}
+	
+	public void defense() {
+		System.out.println("공군이 방어 합니다.");
+	}
+}
+
+public class Ex02 {
+	public static void main(String[] args) {
+
+	}
+}

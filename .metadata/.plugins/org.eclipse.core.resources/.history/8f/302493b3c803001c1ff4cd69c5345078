@@ -1,0 +1,18 @@
+package casting;
+
+class B{
+	public void bbb() {}
+}
+
+class AAA{
+	public  String getText() { return "AAAÅ¬·¡½º";}
+}
+
+public class Ex03 {
+	public static void main(String[] args) {
+		Object a = new AAA();
+		a = new B();
+		
+	}
+
+}

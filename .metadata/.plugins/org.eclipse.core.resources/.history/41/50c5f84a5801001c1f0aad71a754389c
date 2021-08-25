@@ -1,0 +1,28 @@
+package day15_Thread;
+
+import java.awt.Container;
+import java.awt.Dimension;
+
+import javax.swing.*;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("TEST");
+		
+		Container c = frame.getContentPane();
+		JLabel label = new JLabel("Hello GUI");
+		
+		c.add(label);
+		
+		final int height = 500;
+		final int width = 200;
+		
+		
+		frame.setLocation(1000,200);
+		frame.setPreferredSize(new Dimension(height,width));
+		frame.pack();
+		
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

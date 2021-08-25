@@ -1,0 +1,32 @@
+package team5_0824quiz;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SelectInfo {
+	StudentInfo st = new StudentInfo();
+
+	public void displayStInfo(ArrayList<StudentInfo> arr) {
+		int selectNum = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("학생 이름을 입력해주세요");
+		System.out.println(">>>");
+		String name = sc.next();
+		for(int i = 0; i< arr.size(); i++) {
+			StudentInfo st1 = arr.get(i);
+			if(name.equals(this.st.getName())) {
+				System.out.println("이름 : " + this.st.getName());
+				System.out.println("성별 : " + this.st.getGender());
+				System.out.println("주소 : " + this.st.getAddr());
+				System.out.println("나이 : " + this.st.getAge());
+				System.out.println("국어 : " + this.st.getKor());
+				System.out.println("영어 : " + this.st.getEng());
+				System.out.println("수학 : " + this.st.getMath());
+				switch(selectNum) {
+				case 1:
+				}
+				
+			}
+		}
+	}
+}

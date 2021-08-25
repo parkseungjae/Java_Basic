@@ -1,0 +1,66 @@
+package day14_Exception;
+
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+
+
+public class Quiz01 {
+	public static void main(String[] args) {
+		String jumin ="";
+		Scanner sc = new Scanner(System.in);
+		long time = System.currentTimeMillis();
+		SimpleDateFormat s = new SimpleDateFormat("yyyyMMdd");
+		String cDate = s.format(time);
+		System.out.println(cDate);
+		int cYear = Integer.parseInt(cDate.substring(0,4));
+		int cMonth = Integer.parseInt(cDate.substring(4,6));
+		int cDay = Integer.parseInt(cDate.substring(6,8));
+		while(true) {
+			System.out.println("주민번호 앞 6자리를 입력해주세요 : ");
+			try {
+				jumin = sc.next();
+				int bYear = Integer.parseInt(jumin.substring(0,2));
+				int bMonth = Integer.parseInt(jumin.substring(2,4));
+				int bDay = Integer.parseInt(jumin.substring(4,6));
+
+				//현재나이계산
+				/*ex)사용자 생년월일 19970915 => 주민번호 앞자리 970915로 입력 받음 
+				 * year 
+				 * 현재시간 210819 =>cYear = 21(o) 2021 (x)
+				 * 정확한 나이계산을 위해선..? 
+				 */
+				int age = cYear - bYear;
+				//나이는 음수일수 없다.
+				if(age <0) {age *= -1;}
+
+				System.out.println(age);
+				if(jumin.length()>=7) {
+					System.out.println("주민번호 앞자리는 6자리입니다.");
+					continue;
+				}else {
+
+				}
+				//정상적인 month입력판별
+				if(bMonth <=0 || bMonth>=13) {
+					System.out.println(bMonth + "월은 존재하지 않습니다 다시입력해주세요.");
+					continue;
+				}
+				//정상적인 day입력판별
+				if(bDay <= 0 || bDay >=32) {
+					System.out.println(bDay + "일은 존재하지 않습니다 다시입력해주세요.");
+					continue;	
+				}
+				//가입가능나이 판별
+				if(age>=19) {
+					System.out.println("가입가능");
+				}else if(age<19) {
+					System.out.println("가입불가");
+				}
+
+			}catch(Exception e){
+				System.out.println("잘못된 입력입니다 주민번호 앞 6자리만 입력해주세요");
+			}
+		}
+	}
+
+}

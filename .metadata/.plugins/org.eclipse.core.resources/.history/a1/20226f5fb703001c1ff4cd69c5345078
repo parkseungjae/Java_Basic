@@ -1,0 +1,16 @@
+package day16_overridig_interface;
+
+import java.util.Scanner;
+
+public class StopWatch extends Thread{
+	Scanner sc = new Scanner(System.in);
+	String time;
+	public void run() {
+		int select;
+		for(int i = 0; i<; i++) {
+			select= sc.nextInt();
+
+		}
+
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;day15_Thread/src/day15_Thread&apos;&#x0D;&#x0A;- Original project: &apos;day13_Constructor_Inheritance&apos;&#x0D;&#x0A;- Destination element: &apos;day15_Thread/src/day15_Thread&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     day13_Constructor_Inheritance.TimerClass.java&#x0D;&#x0A;     day13_Constructor_Inheritance.LoginClass.java&#x0D;&#x0A;     day13_Constructor_Inheritance.Quiz01_Inheritance.java" description="Copy compilation units" destination="=day15_Thread/src&lt;day15_Thread" element1="/src&lt;day13_Constructor_Inheritance{TimerClass.java" element2="/src&lt;day13_Constructor_Inheritance{LoginClass.java" element3="/src&lt;day13_Constructor_Inheritance{Quiz01_Inheritance.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1629424604081" units="3" version="1.0"/>
+</session>

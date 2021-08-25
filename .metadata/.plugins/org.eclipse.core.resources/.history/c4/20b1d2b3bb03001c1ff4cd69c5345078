@@ -1,0 +1,40 @@
+package day16_overridig_interface;
+
+import java.util.Scanner;
+
+
+class Win7 extends LoginClass{
+	public void main() {
+		Scanner sc = new Scanner(System.in);
+		int select = 0;
+		while(select != 3) {
+			System.out.println("1.로그인\t2.가입\t3.로그아웃");
+			select = sc.nextInt();
+			switch(select) {
+			case 1:
+				super.login();
+				break;
+			case 2:
+				super.join1();
+				break;
+			case 3:
+				super.logout();
+				break;
+			}
+		}
+	}
+
+}
+/*
+class StopWatch extends Thread{
+	String time = null;
+	int hh = parseInt
+}
+*/
+public class Quiz01_Inheritance {
+	public static void main(String[] args) {
+		Win7 w7 = new Win7();
+		w7.main();
+	}
+}
+

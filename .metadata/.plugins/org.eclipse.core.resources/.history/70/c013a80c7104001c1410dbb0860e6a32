@@ -1,0 +1,15 @@
+package day17;
+
+class Print{
+	public void test(double n1, double n2)	{
+		System.out.println(n1+","+n2);
+	}
+}
+
+
+public class Ex01 {
+	public static void main(String[] args) {
+		
+	}
+
+}

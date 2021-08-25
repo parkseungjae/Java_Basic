@@ -1,0 +1,19 @@
+package day15_Thread;
+
+import java.awt.Container;
+
+import javax.swing.*;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("TEST");
+		
+		Container c = frame.getContentPane();
+		JLabel label = new JLabel("Hello GUI");
+		
+		c.add(label);
+		
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

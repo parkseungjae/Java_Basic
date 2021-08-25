@@ -1,0 +1,17 @@
+package day14_Exception;
+
+import java.util.Scanner;
+
+public class Quiz01 {
+	public static void main(String[] args) {
+		String jumin ="",gender="";
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("주민번호 앞자리만 입력해주세요 : ");
+		jumin = sc.next();
+		int age = Integer.parseInt(jumin.substring(0,2));
+		System.out.println(age);
+
+	}
+
+}

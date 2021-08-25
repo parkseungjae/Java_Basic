@@ -1,0 +1,40 @@
+package day13_Constructor_Inheritance;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class TimerClass {
+
+	private Date date;
+	private SimpleDateFormat simpl;
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public SimpleDateFormat getSimpl() {
+		return simpl;
+	}
+	public void setSimpl(SimpleDateFormat simpl) {
+		this.simpl = simpl;
+	}
+
+	public void setTimeForm() {
+		for(int i = 1; i<= 10; i++) {
+			long time = System.currentTimeMillis();
+			SimpleDateFormat s = 
+					new SimpleDateFormat("yyyy년 MM월 dd일 aa hh시 mm분 ss초");
+			this.simpl = s;
+			String str = simpl.format(time);
+			
+			System.out.println(str);
+			try {
+			Thread.sleep(1000);
+			}catch(Exception e) {
+				
+			}
+		}
+	}
+}
+

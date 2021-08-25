@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;d&apos; from expression &apos;this.temp=--this.temp&apos;&#x0D;&#x0A;- Original project: &apos;kg_team5_psj&apos;&#x0D;&#x0A;- Variable name: &apos;d&apos;&#x0D;&#x0A;- Destination method: &apos;quiz_210810.AirConditioner.tempUp()&apos;&#x0D;&#x0A;- Variable expression: &apos;this.temp=--this.temp&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;d&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;quiz_210810{TeamQuiz01.java" name="d" replace="true" selection="512 23" stamp="1628661827658" varType="false" version="1.0"/>
+</session>

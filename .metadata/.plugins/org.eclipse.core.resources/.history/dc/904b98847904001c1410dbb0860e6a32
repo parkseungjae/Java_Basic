@@ -1,0 +1,15 @@
+package day17;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StInfoMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<StInfo> arr = new ArrayList<StInfo>();
+		ArrayList<String> str = new ArrayList<String>();
+		
+		String s = "Test";
+		str.add(s);
+	}
+}

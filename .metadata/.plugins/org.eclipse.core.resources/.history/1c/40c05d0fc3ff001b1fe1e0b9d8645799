@@ -1,0 +1,19 @@
+package day13_Constructor_Inheritance;
+
+//디자인 패턴 중 하나 singleton 방식 
+class Singleton{
+	public int num;
+}
+
+public class Ex03_Singleton {
+	public static void main(String[] args) {
+		Singleton si = new Singleton();
+		Singleton si02 = new Singleton();
+		si.num = 12345;
+		si02.num = 4444;
+		System.out.println("si.num : " + si.num);
+		System.out.println("si02.num : " + si02.num);
+		System.out.println("si : " + si);
+		System.out.println("si02.num : " + si02);
+	}
+}

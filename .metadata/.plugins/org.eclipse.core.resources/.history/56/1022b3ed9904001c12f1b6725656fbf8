@@ -1,0 +1,9 @@
+package test;
+
+public interface Student {
+	public static String name;
+	public static String bithday;
+	public static String ;
+	
+
+}

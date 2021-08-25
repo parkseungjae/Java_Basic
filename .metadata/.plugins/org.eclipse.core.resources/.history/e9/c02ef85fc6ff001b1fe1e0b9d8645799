@@ -1,0 +1,17 @@
+package day13_Constructor_Inheritance;
+
+class Calc01{
+	public void display() {
+		System.out.println("나는 계산기야");
+	}
+}
+
+public class Ex05_Inheritance {
+	public static void main(String[] args) {
+		/*
+		 * 상속
+		 * - Extends를 통해 만든다.
+		 * - 새로운 기능을 추가한다.
+		 */
+	}
+}

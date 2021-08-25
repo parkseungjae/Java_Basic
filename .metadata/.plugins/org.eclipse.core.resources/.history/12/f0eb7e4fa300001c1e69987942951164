@@ -1,0 +1,43 @@
+package day14_Exception;
+
+import java.util.Scanner;
+
+
+
+
+public class Quiz01 {
+	public static void main(String[] args) {
+		String jumin ="";
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.println("주민번호 앞 6자리를 입력해주세요 : ");
+			try {
+				jumin = sc.next();
+				int age = Integer.parseInt(jumin.substring(0,2));
+				int month = Integer.parseInt(jumin.substring(2,4));
+				int day = Integer.parseInt(jumin.substring(4,6));
+				System.out.println(age);
+				System.out.println(month);
+				System.out.println(day);
+				
+				if(jumin.length()>=7) {
+					System.out.println("주민번호 앞자리는 6자리입니다.");
+					break;
+				}else {
+					
+				}
+				if(age<=90) {
+					System.out.println("가입가능");
+				}else if(age>90) {
+					System.out.println("가입불가");
+				}
+				
+				
+
+			}catch(Exception e){
+				System.out.println("잘못된 입력입니다 주민번호 앞 6자리만 입력해주세요");
+			}
+		}
+	}
+
+}

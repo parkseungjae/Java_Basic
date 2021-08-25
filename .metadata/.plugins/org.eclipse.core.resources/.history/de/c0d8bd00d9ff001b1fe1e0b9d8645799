@@ -1,0 +1,62 @@
+package day13_Constructor_Inheritance;
+
+import java.util.Scanner;
+
+public class LoginClass {
+	private Scanner sc = new Scanner(System.in);
+	private String id, pswd , stId,stPw;
+	
+	public String getStId() {
+		return stId;
+	}
+	public void setStId(String stId) {
+		this.stId = stId;
+	}
+	public String getStPw() {
+		return stPw;
+	}
+	public void setStPw(String stPw) {
+		this.stPw = stPw;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getPswd() {
+		return pswd;
+	}
+	public void setPswd(String pswd) {
+		this.pswd = pswd;
+	}
+	
+	
+	public void login() {
+		
+		System.out.println("아이디 입력 : ");
+		setId(sc.next());
+		System.out.println("비밀번호 입력 : ");
+		setPswd(sc.next());
+		if(id.equals(stId) && pswd.equals(pswd)) {
+			System.out.println("인증 통과");
+			}else {
+				System.out.println("인증 실패");
+			}
+		
+	}
+	
+	public void join() {
+		System.out.println("가입 id : ");
+		setStId(sc.next());
+		System.out.println("가입 pswd : ");
+		setStPw(sc.next());
+		System.out.println("저장 완료");
+	}
+	
+	public void logout() {
+		System.out.println("로그아웃합니다.");
+		System.exit(1);
+	}
+}
+

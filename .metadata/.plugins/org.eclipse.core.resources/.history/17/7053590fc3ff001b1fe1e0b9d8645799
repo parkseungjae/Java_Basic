@@ -1,0 +1,5 @@
+package day13_Constructor_Inheritance;
+
+public class Ex04_Singleton {
+
+}

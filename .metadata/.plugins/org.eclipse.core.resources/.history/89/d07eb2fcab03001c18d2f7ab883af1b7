@@ -1,0 +1,15 @@
+package day16_overridig_interface;
+
+import java.util.ArrayList;
+
+class AA extends ArrayList{
+
+}
+
+public class Ex02_Main {
+	public static void main(String[] args) {
+		AA a = new AA();
+		a.add("안녕하세요");
+		System.out.println("저장값 : "+ a.get(0));
+	}
+}

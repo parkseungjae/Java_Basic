@@ -1,0 +1,53 @@
+package day14_Exception;
+
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+
+
+public class Quiz01 {
+	public static void main(String[] args) {
+		String jumin ="";
+		Scanner sc = new Scanner(System.in);
+		long time = System.currentTimeMillis();
+		SimpleDateFormat s = new SimpleDateFormat("yyMMdd");
+		String cDate = s.format(time);
+		System.out.println(cDate);
+		
+		while(true) {
+			System.out.println("주민번호 앞 6자리를 입력해주세요 : ");
+			try {
+				jumin = sc.next();
+				int year = Integer.parseInt(jumin.substring(0,2));
+				int month = Integer.parseInt(jumin.substring(2,4));
+				int day = Integer.parseInt(jumin.substring(4,6));
+				
+				if(jumin.length()>=7) {
+					System.out.println("주민번호 앞자리는 6자리입니다.");
+					continue;
+				}else {
+					
+				}
+				//정상적인 month입력판별
+				if(month <=0 || month>=13) {
+					System.out.println(month + "월은 존재하지 않습니다 다시입력해주세요.");
+					continue;
+				}
+				//정상적인 day입력판별
+				if(day <= 0 || day >=32) {
+					System.out.println(day + "일은 존재하지 않습니다 다시입력해주세요.");
+					continue;	
+				}
+				//가입가능년도 판별
+				if(year<=90) {
+					System.out.println("가입가능");
+				}else if(year>90) {
+					System.out.println("가입불가");
+				}
+				
+			}catch(Exception e){
+				System.out.println("잘못된 입력입니다 주민번호 앞 6자리만 입력해주세요");
+			}
+		}
+	}
+
+}

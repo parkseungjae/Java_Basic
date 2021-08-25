@@ -1,0 +1,7 @@
+package team5_0824quiz;
+
+public class SelectInfo {
+	public void displayStInfo() {
+		
+	}
+}

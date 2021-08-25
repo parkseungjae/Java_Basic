@@ -1,0 +1,26 @@
+package interface_ex;
+
+class aArmy{
+	public void attack() {
+		System.out.println("army attacking");		
+	}
+	
+	public void defense() {
+		System.out.println("army defense");		
+	}
+	
+}
+class aAF{
+	public void missileAttack() {
+		System.out.println("AF's missileAttack");
+	}
+	public void block() {
+		System.out.println("AF's block");
+	}
+	
+}
+public class Ex01 {
+	public static void main(String[] args) {
+		
+	}
+}

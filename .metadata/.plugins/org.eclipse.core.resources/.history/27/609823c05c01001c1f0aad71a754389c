@@ -1,0 +1,68 @@
+package day15_Thread;
+
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class TimerClass {
+
+	private Date date;
+	private SimpleDateFormat simpl;
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public SimpleDateFormat getSimpl() {
+		return simpl;
+	}
+	public void setSimpl(SimpleDateFormat simpl) {
+		this.simpl = simpl;
+	}
+
+	public String setTimeForm() {
+			long time = System.currentTimeMillis();
+			SimpleDateFormat s = 
+					new SimpleDateFormat("yyyy년 MM월 dd일 aa hh시 mm분 ss초");
+			this.simpl = s;
+			String str = simpl.format(time);
+			
+			return str;
+	}
+	
+
+	
+	public void timerFrame() {
+		JFrame frame = new JFrame("TEST");
+
+		Container c = frame.getContentPane();
+		JLabel label = new JLabel("Hello GUI");
+
+		c.add(label);
+
+		final int height = 500;
+		final int width = 1000;
+
+
+		frame.setLocation(1000,200);//가로,세로 위치
+		//프레임 크기
+		frame.setPreferredSize(new Dimension(height,width));
+		frame.pack();//설정값 적용
+
+		Font font = new Font(null,0,32);
+		label.setFont(font);
+		label.setHorizontalAlignment(JLabel.CENTER);
+
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		for(int i =0 ;; i++)
+			label.setText(setTimeForm());
+	}
+}
+

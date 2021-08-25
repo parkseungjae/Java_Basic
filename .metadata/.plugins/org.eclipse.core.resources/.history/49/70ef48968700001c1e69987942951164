@@ -1,0 +1,24 @@
+package day14_Exception;
+
+class BBB{
+	public int aaa;
+}
+
+class AAA extends BBB{
+	
+	public void catch1(int a) {
+		
+	}
+	public void catch1(String a) {
+		
+	}
+}
+
+public class Ex02 {
+	public static void main(String[] args) {
+		AAA a = new AAA();
+		//자식들은 부모클래스에 저장이 가능하다 ex) Object a = new AAA(); 가능
+		a.catch1(11);
+		a.catch1("aaaa");
+	}
+}

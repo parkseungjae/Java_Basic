@@ -1,0 +1,82 @@
+package day16_overridig_interface;
+
+import java.util.Scanner;
+
+public class LoginClass extends Thread{
+	private Scanner sc = new Scanner(System.in);
+	private String id, pswd , stId,stPw;
+
+	public String getId1() {
+		return id;
+	}
+	public void setId1(String id) {
+		this.id = id;
+	}
+	public String getStId() {
+		return stId;
+	}
+	public void setStId(String stId) {
+		this.stId = stId;
+	}
+	public String getStPw() {
+		return stPw;
+	}
+	public void setStPw(String stPw) {
+		this.stPw = stPw;
+	}
+
+	public String getPswd() {
+		return pswd;
+	}
+	public void setPswd(String pswd) {
+		this.pswd = pswd;
+	}
+
+
+	public void login() {
+		TimerClass tm = new TimerClass();
+		int select =0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("아이디 입력 : ");
+		setId1(sc.next());
+		System.out.println("비밀번호 입력 : ");
+		setPswd(sc.next());
+		if(id.equals(stId) && pswd.equals(pswd)) {
+			System.out.println("인증 통과");
+			System.out.println("=====환 영 합 니 다 =====");
+			System.out.println("1.기능\t2.off");
+			while(select != 2) {
+				select = sc.nextInt();
+
+				switch(select) {
+
+				case 1: 
+					tm.run();
+					continue;
+				case 2:
+					
+				}
+			}
+
+
+		}else {
+			System.out.println("인증 실패");
+		}
+
+	}
+
+	public void join1() {
+
+		System.out.println("가입 id : ");
+		setStId(sc.next());
+		System.out.println("가입 pswd : ");
+		setStPw(sc.next());
+		System.out.println("저장 완료");
+	}
+
+	public void logout() {
+		System.out.println("로그아웃합니다.");
+		System.exit(1);
+	}
+}
+

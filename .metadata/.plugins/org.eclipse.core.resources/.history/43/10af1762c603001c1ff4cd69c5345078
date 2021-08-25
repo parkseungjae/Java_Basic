@@ -1,0 +1,33 @@
+package casting;
+
+class Parents{
+	public void familyName() {
+		System.out.println("이");
+	}
+}
+
+class Daughter extends Parents{
+	public void familyName() {
+		System.out.println("이");
+	}
+	public void name() {
+		System.out.println("순신");
+	}
+}
+class Son extends Parents{
+	public void familyName() {
+		System.out.println("이");
+
+	}
+	public void name() {
+		System.out.println("기광");
+	}
+
+}
+
+public class Ex02 {
+	public static void main(String[] args) {
+
+	}
+
+}

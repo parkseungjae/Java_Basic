@@ -1,0 +1,25 @@
+package day14_Exception;
+
+import java.io.IOException;
+class A{
+	public void test() throws IOException{
+		ProcessBuilder b =new ProcessBuilder("calc");
+		b.start();
+
+	}
+	public void display() {
+		test();
+	}
+}
+
+public class Ex04 {
+	/*
+	 * throws IOException : 예외 전가 (이경우 해당 오류가 발생하는 구간에서 프로그램을 멈춤)
+	 * try catch
+	 */
+	public static void main(String[] args) throws IOException {
+		A a = new A();
+		a.display();
+		System.out.println("다음 문장들 실행");
+	}
+}

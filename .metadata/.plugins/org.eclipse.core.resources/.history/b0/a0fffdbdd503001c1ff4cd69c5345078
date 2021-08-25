@@ -1,0 +1,19 @@
+package interface_ex;
+
+interface Test{
+	//public int a;
+	public static final int a = 12345;
+	public final int a1 = 12345;
+	public static int a2 = 12345;
+	
+}
+class Test01 implements Test{
+	public void test() {
+		System.out.println(" °ª");
+	}
+}
+public class Ex03 {
+	public static void main(String[] args) {
+		
+	}
+}

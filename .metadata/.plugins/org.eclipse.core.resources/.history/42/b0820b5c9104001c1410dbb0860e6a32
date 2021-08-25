@@ -1,0 +1,17 @@
+package test;
+
+class test{
+	public void exception() {
+		int num = 123;
+		int result = num /0;
+		System.out.println("다음 코드들 진행");
+		
+	}
+}
+
+public class test01 {
+	public static void main(String[] args) {
+		test t = new test();
+		t.exception();
+	}
+}

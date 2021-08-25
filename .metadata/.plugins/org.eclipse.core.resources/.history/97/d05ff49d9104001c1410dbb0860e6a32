@@ -1,0 +1,21 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class test01 {
+	public static void main(String[] args) {
+		while(true) {
+			Scanner input = new Scanner(System.in);
+			ArrayList arr = new ArrayList();
+			System.out.println("사용자 아이디 입력 : ");
+			String userId = input.next();
+			if(arr.contains(userId)) {
+				System.out.println("중복된 값이 존재합니다.");
+			}else {
+				arr.add(userId);
+			}
+			System.out.println(arr);
+		}
+	}
+}
