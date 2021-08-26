@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.apache.commons.lang3.time.StopWatch"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex01_Class"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex03Method"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex04"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex04Method"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex06Method"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex07"/>
-    <fullyQualifiedTypeName name="day09_Method.Ex07Method"/>
-    <fullyQualifiedTypeName name="day09_Method.Quiz01_Method"/>
-    <fullyQualifiedTypeName name="day10_ClassVariable.Ex04_Variable"/>
-    <fullyQualifiedTypeName name="day10_ClassVariable.Ex05_MainClass"/>
-    <fullyQualifiedTypeName name="day10_ClassVariable.Ex05_Variable"/>
-    <fullyQualifiedTypeName name="day10_ClassVariable.Ex06_final"/>
     <fullyQualifiedTypeName name="day10_ClassVariable.Quiz01_Class"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="day10_ClassVariable.Quiz02_Class"/>
@@ -34,7 +20,6 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="quiz_210810.AirConditioner"/>
     <fullyQualifiedTypeName name="day13_Constructor_Inheritance.Constructor01"/>
     <fullyQualifiedTypeName name="day13_Constructor_Inheritance.Constructor02"/>
@@ -58,6 +43,21 @@
     <fullyQualifiedTypeName name="abstract_ex.NewAbstract"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="team5_0824quiz.StudentInfoManagement"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputValidation"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="quiz.Quiz01"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 </qualifiedTypeNameHistroy>

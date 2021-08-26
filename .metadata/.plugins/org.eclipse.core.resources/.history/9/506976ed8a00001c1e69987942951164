@@ -1,8 +1,0 @@
-package day14_Exception;
-
-public class Ex04 {
-	public static void main(String[] args) {
-		ProcessBuilder b =new ProcessBuilder("calc");
-		b.start();
-	}
-}
