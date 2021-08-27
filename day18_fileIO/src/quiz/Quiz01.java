@@ -176,7 +176,7 @@ class FileClass {
 
 
 public class Quiz01 {
-	public static void main(String[] args) throws IOException, ClassNotFoundException {
+	public static void main(String[] args) throws Exception{
 		FileClass outMember = new FileClass(); // 추가내용
 
 		Scanner input = new Scanner(System.in);

@@ -45,7 +45,7 @@ class Member implements Serializable{ //추가할것
 //============== 추가 내용 ================
 class FileInOut {
 	public void fileOut(Member outMember) throws IOException{	
-		File dir = new File("D:\\test");
+		File dir = new File("C:/park's java/quiz210826/");
 	    File f3 = new File(dir, outMember.getStNum()+".txt");
 	    
 	    FileOutputStream fos = new FileOutputStream(f3);
@@ -57,7 +57,7 @@ class FileInOut {
 	}
 	public Member fileRead(String stNum) throws IOException, ClassNotFoundException{
 		Member mb=null;
-		File dir = new File("D:\\test");
+		File dir = new File("C:/park's java/quiz210826/");
 		File f3 = new File(dir, stNum+".txt");
 		try{
 		FileInputStream fis = new FileInputStream(f3);
@@ -71,7 +71,7 @@ class FileInOut {
 		return mb;
 	}
 	public boolean chkFile(String stNum) throws IOException{
-		File dir = new File("D:\\test");
+		File dir = new File("C:/park's java/quiz210826/");
 	    File f3 = new File(dir, stNum+".txt");
 	    if(f3.createNewFile()){  return false;} // 현재 파일이 존재하면 true
 	    return true;
